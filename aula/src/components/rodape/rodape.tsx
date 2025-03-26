@@ -1,7 +1,7 @@
 import React from 'react'
 
-export default function rodape() {
+export default function Rodape() {
   return (
-    <div>rodape</div>
+    <div>Rodape</div>
   )
 }

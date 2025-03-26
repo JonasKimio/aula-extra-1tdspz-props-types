@@ -1,7 +1,7 @@
+import Cabecalho from "@/components/cabecalho/cabecalho";
+import Rodape from "@/components/rodape/rodape";
 import type { Metadata } from "next";
 import "./globals.css";
-import cabecalho from "@/components/cabecalho/cabecalho";
-import rodape from "@/components/rodape/rodape";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,9 +16,14 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body>
-        <cabecalho/>
+        <Cabecalho titulo={"EXEMPLO DE PROPS E TYPES"}
+          msg={"Olá Props!!"} 
+          usuario={{
+            nome:"José",
+            email:"josé@email.com"
+          }}/>
         {children}
-        <rodape/>
+        <Rodape />
       </body>
     </html>
   );
